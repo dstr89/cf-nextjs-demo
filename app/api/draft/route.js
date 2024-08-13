@@ -21,7 +21,7 @@ export async function GET(request) {
     return new Response("Article not found", { status: 404 });
   }
 
-  draftMode.enable();
+  draftMode().enable();
   const { isEnabled } = draftMode()
   redirect(`/articles/${article.slug}`);
 }
