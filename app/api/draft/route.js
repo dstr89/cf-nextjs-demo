@@ -22,6 +22,5 @@ export async function GET(request) {
   }
 
   draftMode().enable();
-  const { isEnabled } = draftMode()
   redirect(`/articles/${article.slug}`);
 }
