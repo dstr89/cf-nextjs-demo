@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
       </body>
-      {isEnabled && <Script src="/live-preview.js" />}
+      {isEnabled && <Script src="/live-preview.mjs" />}
     </html>
   );
 }
