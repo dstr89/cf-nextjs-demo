@@ -3,10 +3,6 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "include": [
-      "**/*.js",
-      "public/*.js",
-    ],
-  }
-  
+  },
+  "include": ["src/**/*", "public/*"]
 }
