@@ -1,6 +1,4 @@
-//import { ContentfulLivePreview } from '@contentful/live-preview';
-const livePreview = require('@contentful/live-preview');
-const ContentfulLivePreview = livePreview.ContentfulLivePreview();
+import { ContentfulLivePreview } from '@contentful/live-preview';
 
 ContentfulLivePreview.init({
   locale: 'en-US',
