@@ -2,6 +2,11 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "include": [
+      "**/*.js",
+      "public/*.js",
+    ],
   }
+  
 }
