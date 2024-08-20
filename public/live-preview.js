@@ -1,4 +1,4 @@
-import { ContentfulLivePreview } from '@contentful/live-preview';
+import { ContentfulLivePreview } from '@contentful/live-preview.js';
 
 ContentfulLivePreview.init({
   locale: 'en-US',
