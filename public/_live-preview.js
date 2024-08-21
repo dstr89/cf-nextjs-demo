@@ -4,7 +4,7 @@ ContentfulLivePreview.init({
   locale: 'en-US',
   debugMode: true,
   enableLiveUpdates: true,
-  space: '71ayinbFLRWWUEmPZ7RLI1'
+  entryId: '71ayinbFLRWWUEmPZ7RLI1'
 });
 
 ContentfulLivePreview.subscribe('save', {
