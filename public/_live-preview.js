@@ -8,6 +8,7 @@ ContentfulLivePreview.init({
 
 ContentfulLivePreview.subscribe('save', {
   callback: async () => {
+    alert('save');
     const pathname = window.location.pathname;
     await fetch(`/api/revalidate?pathname=${pathname}`);
     window.location.reload();
