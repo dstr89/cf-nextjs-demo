@@ -4,6 +4,7 @@ ContentfulLivePreview.init({
   locale: 'en-US',
   debugMode: true,
   enableLiveUpdates: true,
+  id: '71ayinbFLRWWUEmPZ7RLI1'
 });
 
 ContentfulLivePreview.subscribe('ENTRY_SAVED', {
