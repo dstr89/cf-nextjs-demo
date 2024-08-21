@@ -1124,7 +1124,7 @@ ve.init({
   locale: "en-US",
   debugMode: !0,
   enableLiveUpdates: !0,
-  space: "71ayinbFLRWWUEmPZ7RLI1"
+  entryId: "71ayinbFLRWWUEmPZ7RLI1"
 });
 ve.subscribe("save", {
   callback: async () => {
