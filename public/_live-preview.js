@@ -7,9 +7,8 @@ ContentfulLivePreview.init({
   id: '71ayinbFLRWWUEmPZ7RLI1'
 });
 
-ContentfulLivePreview.subscribe('ENTRY_SAVED', {
+ContentfulLivePreview.subscribe('save', {
   callback: async () => {
-    alert('save');
     const pathname = window.location.pathname;
     await fetch(`/api/revalidate?pathname=${pathname}`);
     window.location.reload();
