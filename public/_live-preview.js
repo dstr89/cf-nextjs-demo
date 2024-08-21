@@ -6,7 +6,7 @@ ContentfulLivePreview.init({
   enableLiveUpdates: true,
 });
 
-ContentfulLivePreview.subscribe('save', {
+ContentfulLivePreview.subscribe('ENTRY_SAVED', {
   callback: async () => {
     alert('save');
     const pathname = window.location.pathname;
