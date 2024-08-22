@@ -42,7 +42,11 @@ Don't forget to all set Environment Variables in Vercel.
 
 ## Configure Contentful
 
+### Content Revalidation
+
 Log into your Contentful space and go to Settings > Webhooks and click the Add Webhook button. From here you can set the following settings to call the revalidate API for on-demand revalidation. For example: https://contentful-nextjs-app-router.vercel.app/api/revalidation
+
+### Content Preview
 
 Next, navigate to Settings > Content Preview and click the Create preview platform button. Provide Name and Description and then select Knowledge Article from the Select content types dropdown. Under Knowledge Article, point Contentful to our draft API endpoint containing the secret and slug to enable Draft Mode. For example: https://contentful-nextjs-app-router.vercel.app/api/draft?secret=<your content preview secret>&slug={entry.fields.slug}
 
