@@ -36,7 +36,13 @@ export default async function KnowledgeArticlePage({
             >
               {article.title}
             </h1>
-            <p className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400">
+            <p className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
+              {...ContentfulLivePreview.getProps({
+                entryId: article.sys.id,
+                fieldId: 'summary',
+                locale: 'en-US',
+              })}
+            >
               {article.summary}
             </p>
           </div>
@@ -47,10 +53,21 @@ export default async function KnowledgeArticlePage({
               height="365"
               src={article.articleImage.url}
               width="650"
+              {...ContentfulLivePreview.getProps({
+                entryId: article.sys.id,
+                fieldId: 'article.articleImage',
+                locale: 'en-US',
+              })}
             />
             <div className="space-y-4 md:space-y-6">
               <div className="space-y-2">
-                <div className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400">
+                <div className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
+                  {...ContentfulLivePreview.getProps({
+                    entryId: article.sys.id,
+                    fieldId: 'article.details',
+                    locale: 'en-US',
+                  })}
+                >
                   {documentToReactComponents(article.details.json)}
                 </div>
               </div>
