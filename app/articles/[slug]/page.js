@@ -55,7 +55,7 @@ export default async function KnowledgeArticlePage({
               width="650"
               {...ContentfulLivePreview.getProps({
                 entryId: article.sys.id,
-                fieldId: 'article.articleImage',
+                fieldId: 'articleImage',
                 locale: 'en-US',
               })}
             />
@@ -64,7 +64,7 @@ export default async function KnowledgeArticlePage({
                 <div className="max-w-[900px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400"
                   {...ContentfulLivePreview.getProps({
                     entryId: article.sys.id,
-                    fieldId: 'article.details',
+                    fieldId: 'details',
                     locale: 'en-US',
                   })}
                 >
