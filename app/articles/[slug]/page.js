@@ -29,7 +29,7 @@ export default async function KnowledgeArticlePage({
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl"
               {...ContentfulLivePreview.getProps({
-                entryId: post.sys.id,
+                entryId: article.sys.id,
                 fieldId: 'title',
                 locale: 'en-US',
               })}
